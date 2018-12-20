@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+   <TextView
+       android:id="@+id/gou"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="40dp"
+       android:text="购物车"
+       android:gravity="center"
+
+       />
+ <android.support.v7.widget.RecyclerView
+     android:id="@+id/activity_recyclerView"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below="@+id/gou"
+     android:layout_above="@id/layout"
+     >
+
+ </android.support.v7.widget.RecyclerView>
+
+ <LinearLayout
+     android:id="@+id/layout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:orientation="horizontal"
+     >
+   <CheckBox
+       android:id="@+id/activity_checkbox"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="全选/反选"
+      android:textSize="25dp"
+      android:layout_weight="1"
+      />
+  <TextView
+      android:id="@+id/activity_price"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="总价:$"
+      android:textSize="25dp"
+      android:layout_weight="1"
+      android:background="#eb3223"
+      />
+  <Button
+      android:id="@+id/activity_num"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="去结算"
+      android:textSize="30dp"
+      android:layout_weight="1"
+      android:background="#eb3223"
+      />
+ </LinearLayout>
+
+</RelativeLayout>

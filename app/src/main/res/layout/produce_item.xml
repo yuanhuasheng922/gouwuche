@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <CheckBox
+        android:id="@+id/product_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+       />
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/product_check"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_launcher"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/product_image"
+            >
+
+            <TextView
+                android:id="@+id/product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:paddingLeft="10dp"
+                android:text="我的"
+                android:textSize="20dp"
+                />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    >
+                    <TextView
+                        android:id="@+id/product_price"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="我的"
+                        android:textSize="20dp"
+                        android:paddingLeft="10dp"
+
+                        />
+
+                    <com.example.yuan.dsrikao_04.custom.CustomSymbl
+
+                        android:id="@+id/product_custon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/product_price"
+                        ></com.example.yuan.dsrikao_04.custom.CustomSymbl>
+
+                </RelativeLayout>
+
+
+        </RelativeLayout>
+</RelativeLayout>

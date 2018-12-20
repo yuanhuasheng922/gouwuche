@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+<CheckBox
+    android:id="@+id/product_checkbox"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/product_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="wode "/>
+        <com.example.yuan.day_19.CustomView
+            android:id="@+id/product_customview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/product_price"
+            >
+
+        </com.example.yuan.day_19.CustomView>
+
+    </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>
